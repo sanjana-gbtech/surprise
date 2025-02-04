@@ -11,9 +11,9 @@ function Happy() {
     const videos = [gf1, gf2, gf3, gf4];
 
     return (
-        <div className="d-flex justify-content-center  bg-danger">
-          <div className="w-50" > 
-            <h1 className="text-white text-center">YAAYYY!! We'll Have Fun</h1>
+        <div className="d-flex justify-content-center  ">
+          <div className="w-50 mt-5" > 
+            <h1 className="text-danger text-center">YAAYYY!! We'll Have Fun...</h1>
             <Carousel 
                 autoPlay 
                 interval={3000} 
@@ -24,7 +24,7 @@ function Happy() {
             >
                 {videos.map((video, index) => (
                     <div key={index} className="d-flex  " style={{height:'100%'}}>
-                        <video src={video} className="d-block w-75 mx-auto" autoPlay loop muted />
+                        <video src={video} className="d-block w-100 mx-auto"  loop muted />
                     </div>
                 ))}
             </Carousel>

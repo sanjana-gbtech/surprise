@@ -10,9 +10,9 @@ function Envolope(props) {
     };
 
     return (
-        <div className='d-flex justify-content-center align-items-center' style={{ height: '100vh' }}>
-            <div className='p-5 bg-danger d-flex flex-column fst-italic justify-content-center align-items-center w-50 rounded-3'>
-                <h3>Hello Love</h3>
+        <div className='d-flex justify-content-center align-items-center' style={{ height: '80vh' }}>
+            <div className='p-5 bg-danger d-flex flex-column fst-italic justify-content-center align-items-center w-75 rounded-3'>
+                <h3 className='text-white'>Hello Love</h3>
                 <img
                     src={envlope}
                     alt="image"

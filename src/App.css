@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.carousel.carousel-slider .control-arrow{
+  color:crimson !important;
+  background-color: #282c34 !important;
+}

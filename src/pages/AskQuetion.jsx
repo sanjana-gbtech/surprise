@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {useNavigate} from 'react-router-dom';
+import ques from '../ques.jpg'
 function AskQuestion() {
     const [yesButtons, setYesButtons] = useState([]);
     const cardRef = useRef(null);
@@ -40,11 +41,14 @@ function AskQuestion() {
     };
 
     return (
-        <div className="d-flex justify-content-center align-items-center vh-100 position-relative">
-            <div  className="card p-4 position-relative" style={{ height: '60vh', width: '400px', overflow: 'hidden' }}>
+        <div className="d-flex justify-content-center align-items-center vh-80 position-relative">
+            <div  className="card border-0 p-4 position-relative" style={{ height: '', width: '400px', overflow: 'hidden' }}>
                 <div className="card-body text-center">
-                    <h5 className="card-title mt-4">Will You Be My Valentine?</h5>
-                    <div className="d-flex justify-content-center align-items-center position-relative" ref={cardRef} id='buttonDiv' style={{ height: '30vh' }}>
+                    <div>
+                        <img src={ques} alt="" className='w-50' />
+                    </div>
+                    <h5 className="card-title my-2 font-bold">Will You Be My Valentine?</h5>
+                    <div className=" mt-5 d-flex justify-content-center align-items-center position-relative" ref={cardRef} id='buttonDiv' style={{ height: '30vh' }}>
                         {/* Dynamically generated "Yes!" buttons */}
                         {yesButtons.map(button => (
                             <a
