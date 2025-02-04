@@ -14,24 +14,16 @@ function Happy() {
         <div className="d-flex justify-content-center  ">
           <div className="w-50 mt-5" > 
             <h1 className="text-danger text-center">YAAYYY!! We'll Have Fun...</h1>
-            {/* <Carousel 
-                autoPlay 
-                interval={3000} 
-                infiniteLoop 
-                showThumbs={false} 
-                showStatus={false}
-                swipeable
-            >
-                {videos.map((video, index) => (
-                    <div key={index} className="d-flex  " style={{height:'100%'}}>
-                        <video src={video} className="d-block w-100 mx-auto"  loop muted />
-                    </div>
-                ))}
-            </Carousel> */}
 
-            <div  className="d-flex  " style={{height:'100%'}}>
-                        <video src={videos[2]} className="d-block w-100 mx-auto"  loop muted />
-             </div>
+            <div className="d-flex justify-content-center align-items-center w-100">
+            <video autoPlay 
+  playsInline loop muted>
+                <source src={gf3} type="video/mp4" />
+                <source src={gf2.replace('.mp4', '.webm')} type="video/webm" />
+                Your browser does not support the video tag.
+                </video>
+
+                </div>
           </div>
         </div>
     );
