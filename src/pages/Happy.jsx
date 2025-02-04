@@ -14,7 +14,7 @@ function Happy() {
         <div className="d-flex justify-content-center  ">
           <div className="w-50 mt-5" > 
             <h1 className="text-danger text-center">YAAYYY!! We'll Have Fun...</h1>
-            <Carousel 
+            {/* <Carousel 
                 autoPlay 
                 interval={3000} 
                 infiniteLoop 
@@ -27,7 +27,11 @@ function Happy() {
                         <video src={video} className="d-block w-100 mx-auto"  loop muted />
                     </div>
                 ))}
-            </Carousel>
+            </Carousel> */}
+
+            <div  className="d-flex  " style={{height:'100%'}}>
+                        <video src={videos[2]} className="d-block w-100 mx-auto"  loop muted />
+             </div>
           </div>
         </div>
     );

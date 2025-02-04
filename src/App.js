@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Envolope />} />
         <Route path="/happy" element={<Happy />} />
-        <Route path="/AskQuestion" element={<AskQuetion/>} />
+        <Route path="/askQuestion" element={<AskQuetion/>} />
       </Routes>
     </Router>
   );

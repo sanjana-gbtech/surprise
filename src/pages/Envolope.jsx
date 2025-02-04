@@ -6,7 +6,7 @@ function Envolope(props) {
     const navigate = useNavigate(); // Initialize useNavigate
 
     const handleClick = () => {
-        navigate('/AskQuestion'); // Redirect to /askQuestion
+        navigate('/askQuestion'); // Redirect to /askQuestion
     };
 
     return (
